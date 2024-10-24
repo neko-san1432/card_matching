@@ -1,69 +1,56 @@
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Card match</title>
-  <link rel="stylesheet" href="./style.css" />
-  <audio id="cardFlipSound" src="flip.mp3" preload="on"></audio>
-
-</head>
-<script src="./asd.js" defer></script>
-
-<header>Matching Game bitch</header>
-<main>
-  <div id="d1">card deck1</div>
-  <div id="d2">card deck2</div>
-  <section>
-    <div>timer</div>
-  </section>
-  <section class="card-panel1">
-    <div class="card-panel">
-      <div class="card">
-        <button id="card1" onclick="flip('card1')"><!--card area--></button>
-
-      </div>
-      <div class="card">
-        <button id="card2" onclick="flip('card2')"><!--card area--></button>
-
-      </div>
-      <div class="card">
-        <button id="card3" onclick="flip('card3')"><!--card area--></button>
-
-      </div>
-      <div class="card">
-        <button id="card4" onclick="flip('card4')"><!--card area--></button>
-
-      </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="./style.css" />
+    <audio id="cardFlipSound" src="flip.mp3" preload="on"></audio>
+    <script src="./asd.js" defer></script>
+  </head>
+  <body>
+    <header>Memory Game</header>
+    <main id = "s">
+      <div id="d1"></div>
+      <div id="d2"></div>
+      <section>
+      </section>
+      <section class="card-panel1">
+        <div class="card-panel">
+          <div class="card">
+            <button id="card1" onclick="flip('card1')"><!--card area--></button>
+          </div>
+          <div class="card">
+            <button id="card2" onclick="flip('card2')"><!--card area--></button>
+          </div>
+          <div class="card">
+            <button id="card3" onclick="flip('card3')"><!--card area--></button>
+          </div>
+          <div class="card">
+            <button id="card4" onclick="flip('card4')"><!--card area--></button>
+          </div>
+        </div>
+        <div class="card-panel">
+          <div class="card">
+            <button id="card5" onclick="flip('card5')"><!--card area--></button>
+          </div>
+          <div class="card">
+            <button id="card6" onclick="flip('card6')"><!--card area--></button>
+          </div>
+          <div class="card">
+            <button id="card7" onclick="flip('card7')"><!--card area--></button>
+          </div>
+          <div class="card">
+            <button id="card8" onclick="flip('card8')"><!--card area--></button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <button class = "b2" onclick="javascript:location.reload()">Reset</button>
+      <div class="message" id = "sd">
+        <span class="gold-text">Congratulations,</span> <br>
+        <span class="gold-text">You Won!</span>
     </div>
-    <div class="card-panel">
-      <div class="card">
-        <button id="card5" onclick="flip('card5')"><!--card area--></button>
-
-      </div>
-      <div class="card">
-        <button id="card6" onclick="flip('card6')"><!--card area--></button>
-
-      </div>
-      <div class="card">
-        <button id="card7" onclick="flip('card7')"><!--card area--></button>
-
-      </div>
-      <div class="card">
-        <button id="card8" onclick="flip('card8')"><!--card area--></button>
-
-      </div>
-    </div>
-  </section>
-  <aside class="hearts">
-    ❤️❤️❤️
-  </aside>
-</main>
-<footer>
-  <button>Start</button>
-  <button>Reset</button>
-</footer>
-
-<body></body>
-
+    </footer>
+  </body>
 </html>
